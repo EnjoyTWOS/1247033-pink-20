@@ -6,33 +6,117 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <!--Лого сайта-->
       <a class="page-header__logo">
-        <img src="img/pink.svg" width="74" height="23" alt="Приложение «Пинк»">
+        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Приложение «Пинк»">
       </a>
+      <!--Навигация главной-->
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="- - photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="- - contest.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="- - photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="- - contest.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение «Пинк» — простой и удобный способ для создания и редактирования фотографий</h1>
+          <!--Главное промо сайта-->
+          <section class="promo">
+            <h2 class="visually-hidden">Промо сайта</h2>
+            <article class="promo__picture promo-picture">
+              <p class="promo-picture__text">Взгляните на жизнь<br> иначе!</p>
+              <div class="promo-picture__image">
+                <img src="https://via.placeholder.com/320x462" width="320" height="462" alt="Pink">
+              </div>
+            </article>
+            <article class="promo__download download">
+              <a class="download__button button" href="#">Скачать приложение</a>
+              <div class="donload__os os">
+                <ul class="os__list">
+                  <li class="os__item">
+                    <a class="os__link os__link--apple" href="#">Apple</a>
+                  </li>
+                  <li class="os__item">
+                    <a class="os__link os__link--android" href="#">Android</a>
+                  </li>
+                  <li class="os__item">
+                    <a class="os__link os__link--windows" href="#">Windows</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </article>
+          </section>
+          <!--Преимущества-->
+          <section class="advantages">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <header class="advantages__header">
+              <p class="advantages__intro">Устали от серости<br> мегаполиса?</p>
+              <p class="advantages__intro">Нам есть, что вам<br> предложить!</p>
+            </header>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить<br> осеннюю хандру и депрессию<br> буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых</p>
+              </li>
+            </ul>
+            <div class="advantages__image flexible-image">
+              <img src="https://via.placeholder.com/157x320" width="157" height="320" alt="Всем привет!">
+            </div>
+          </section>
+          <!--Здесь будут отзывы-->
+          <!--Здесь будут тарифы-->
+          <!--Здесь будут контакты и карта-->
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Приложение «Пинк»">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
