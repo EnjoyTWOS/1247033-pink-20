@@ -150,6 +150,41 @@
           </article>
         </div>
       </section>
+      <section class="filter">
+        <h2 class="visually-hidden">Обработка фотографии</h2>
+        <header class="filter__header">
+          <p class="filter__intro filter-intro"></p>
+        </header>
+        <div class="filter__wrapper">
+          <a class="filter__image" href="#">
+            <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фотография для обработки">
+          </a>
+          <div class="filter__filters filters">
+            <ul class="filters__list">
+              <li class="filters__item">
+                <a class="filters__link filters__link--size" href="#">Размер</a>
+              </li>
+              <li class="filters__item">
+                <a class="filters__link filters__link--color" href="#">Цвет</a>
+              </li>
+              <li class="filters__item">
+                <a class="filters__link filters__link--contrast" href="#">Контраст</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__range-filter range-filter">
+            <div class="filter__range-controls range-controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__toggle toggle" tabindex="0"></div>
+              <button type="button" class="visually-hidden">Ползунок</button>
+            </div>
+          </div>
+          <button class="button filter__button filter__button--submit" type="submit">Запостить</button>
+          <button class="button filter__button filter__button--cancel" type="button">Отменить</button>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
