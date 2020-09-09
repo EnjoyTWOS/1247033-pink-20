@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Volodymyr Danylyuk](https://up.htmlacademy.ru/adaptive/20/user/1247033).
-* Наставник: [Malik Kirov].(https://htmlacademy.ru/profile/id17217)
+* Наставник: Malik
 
 ---
 
