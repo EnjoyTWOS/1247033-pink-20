@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
@@ -50,7 +49,7 @@
       </section>
       <!--Форма записи на конкурс-->
       <form action="https://echo.htmlacademy.ru" method="get" class="form">
-        <header class="form__header">
+        <header class="form__header form-header">
           <p class="form__intro form-intro">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
@@ -59,7 +58,7 @@
         <section class="form__name form-name">
           <label for="surname">Фамилия:</label>
           <input class="form__surname surname" type="text" id="surname" name="surname" value="Укажите фамилию *" required><br>
-          <label for="surname">Имя:</label>
+          <label for="name">Имя:</label>
           <input class="form__name name" type="text" id="name" name="name" value="Введите ваше имя *" required><br>
           <label for="fathers-name">Отчество:</label>
           <input class="form__fathersname fathersname" type="text" id="fathersname" name="fathersname" value="Ну и отчество тоже">
@@ -96,9 +95,9 @@
         </section>
         <!--Контакты-->
         <section class="form__contacts form-contacts">
-          <label for="surname">Номер телефона</label>
+          <label for="tel">Номер телефона</label>
           <input class="form__tel form-email" type="tel" id="tel" name="tel" value="Номер, пожалуйста"><br>
-          <label for="surname">Адрес почты</label>
+          <label for="email">Адрес почты</label>
           <input class="form__email form-email" type="email" id="email" name="email" value="Введите почту *" required>
         </section>
         <!--Радио-->
@@ -111,24 +110,25 @@
             </li>
             <li class="radio__item">
               <input  class="radio__title" type="radio" name="android" id="android" value="andoid">
-              <label for="ios">Pink на Android</label>
+              <label for="android">Pink на Android</label>
             </li>
             <li class="radio__item">
               <input  class="radio__title" type="radio" name="windows" id="windows" value="windows">
-              <label for="ios">Windows Phone</label>
+              <label for="windows">Windows Phone</label>
             </li>
           </ul>
         </section>
         <!--Отзыв-->
-        <section class="form__review">
+        <section class="form__review review">
           <label for="review">Опишите свои эмоции</label><br>
           <textarea class="form__review--text" type="text" id="review" name="review" rows="10">Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </section>
         <input class="form__button button form-button" type="submit" name="regestration" value="Отправить форму">
-        <small class="form__legend form__legend--bottom">
-          * — обязательные для заполнения поля
-        </small>
+        <div  class="form__legend form__legend--bottom">
+          <small>*</small>
+          <p> — обязательные для заполнения поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
