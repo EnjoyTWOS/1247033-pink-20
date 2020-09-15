@@ -1,0 +1,27 @@
+.promo {
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+    background-image: url(../../img/iphone-hand-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: 20em;
+  }
+}
+
+.promo-bg {
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
+}

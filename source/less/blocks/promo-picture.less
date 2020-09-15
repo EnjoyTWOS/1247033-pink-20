@@ -1,13 +1,31 @@
 .promo-picture {
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .promo-picture__text {
   .text-light;
   .center-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 120%;
+    padding-top: 100px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width){
+    padding-top: 94px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
-.promo-picture__image img {
-  display: block;
+.promo-picture__image {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

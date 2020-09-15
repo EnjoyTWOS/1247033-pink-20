@@ -2,208 +2,215 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <!--Лого сайта-->
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Приложение «Пинк»">
-      </a>
-      <!--Навигация фотографий-->
-      <nav class="photo-nav">
-        <button class="photo-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="photo-nav__wrapper">
-          <ul class="photo-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
+    <div class="container">
+      <div class="header-wrapper__notmain">
+        <header class="page-header__notmain">
+          <!--Лого сайта-->
+          <a class="page-header__logo">
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Приложение «Пинк»">
+          </a>
+          <!--Навигация фотографий-->
+          <nav class="photo-nav">
+            <button class="photo-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="photo-nav__wrapper">
+              <ul class="photo-nav__list site-list">
+                <li class="site-list__item">
+                  <a href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="site-list__item  site-list__item--active">
+                  <a>
+                    Фотографии
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="contest.html">
+                    Конкурс
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="https://htmlacademy.ru/intensive/adaptive">
+                    HTML Academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main class="page-photo">
+          <h1 class="visually-hidden">Фотографии пользователей приложения «Пинк»</h1>
+          <!--Промо страницы фотографий-->
+          <section class="photo-promo">
+            <h2 class="visually-hidden">Промо страницы фотографий</h2>
+           <p class="photo-promo__text">Фотографии пользователей</p>
+          </section>
+      </div>
+        <!--Фотографии пользователей-->
+          <section class="photos">
+            <h2 class="visually-hidden">Фотографии</h2>
+            <header class="photos__header">
+            <p class="photos__intro">
+              Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?
+            </p>
+            </header>
+          <div class="photos__all">
+            <article class="photos__item photos__item--best">
+              <a  class="photos__image photos-image--best" href="#">
+                <img src="https://via.placeholder.com/320x137" width="100%" height="137" alt="Панорама дня">
               </a>
+              <div class="photos__author-info photos__author-info--best">
+                <b class="photos__author-name">Анна</b>
+                <p class="photos__time">(5 минут назад)</p>
+                <p class="photos__text">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+                <a class="photos__likes" href="#">Нравится: 215</a>
+              </div>
+            </article>
+            <div class="photos__list">
+              <article class="photos__item">
+                <a class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info">
+                  <b class="photos__author-name">Левон</b>
+                  <p class="photos__time">(5 часов назад)</p>
+                  <p class="photos__text">
+                    Вчера он на луну летал, сегодня в руки к нам попал.
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 356</a>
+                </div>
+              </article>
+              <article class="photos__item">
+                <a class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info">
+                  <b class="photos__author-name">Антон</b>
+                  <p class="photos__time">(2 часов назад)</p>
+                  <p class="photos__text">
+                   Соседи будут рады!
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 666</a>
+                </div>
+              </article>
+              <article class="photos__item">
+                <a  class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info">
+                  <b class="photos__author-name">Борис</b>
+                  <p class="photos__time">(20 часов назад)</p>
+                  <p class="photos__text">
+                    Здесь могла быть ваша цитата о высоком и вечном.
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 215</a>
+                </div>
+              </article>
+              <article class="photos__item">
+                <a  class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info">
+                  <b class="photos__author-name">Сергей</b>
+                  <p class="photos__time">(25 часов назад)</p>
+                  <p class="photos__text">
+                    Самая кубанская в мире!
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 4</a>
+                </div>
+              </article>
+              <article class="photos__item">
+                <a class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info">
+                  <b class="photos__author-name">Максим</b>
+                  <p class="photos__time">(40 часов назад)</p>
+                  <p class="photos__text">
+                    А где снег-то?
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 150</a>
+                </div>
+              </article>
+              <article class="photos__item">
+                <a  class="photos__image" href="#">
+                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
+                </a>
+                <div class="photos__author-info photos__author-info--last">
+                  <b class="photos__author-name">Надежда</b>
+                  <p class="photos__time">(45 часов назад)</p>
+                  <p class="photos__text">
+                    Всем GM и взаимные лайки!
+                  </p>
+                  <a class="photos__likes" href="#">Нравится: 2560</a>
+                </div>
+              </article>
+            </div>
+          </section>
+            </div>
+        <section class="filter">
+          <h2 class="visually-hidden">Обработка фотографии</h2>
+          <header class="filter__header">
+            <p class="filter__intro filter-intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          </header>
+          <div class="filter__wrapper">
+            <a class="filter__image" href="#">
+              <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фотография для обработки">
+            </a>
+            <div class="filter__filters filters">
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <a class="filters__link filters__link--size" href="#">Размер</a>
+                </li>
+                <li class="filters__item">
+                  <a class="filters__link filters__link--color" href="#">Цвет</a>
+                </li>
+                <li class="filters__item">
+                  <a class="filters__link filters__link--contrast" href="#">Контраст</a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__range-filter range-filter">
+              <div class="filter__range-controls range-controls">
+                <input type="range">
+              </div>
+            </div>
+            <button class="button filter__button filter__button--submit" type="submit">Запостить</button>
+            <button class="button filter__button filter__button--cancel" type="reset">Отменить</button>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Приложение «Пинк»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
-              <a>
-                Фотографии
-              </a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
             </li>
-            <li class="site-list__item">
-              <a href="contest.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-              </a>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">YouTube</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main class="page-photo">
-      <h1 class="visually-hidden">Фотографии пользователей приложения «Пинк»</h1>
-      <!--Промо страницы фотографий-->
-      <section class="photo-promo">
-        <h2 class="visually-hidden">Промо страницы фотографий</h2>
-       <p class="photo-promo__text">Фотографии пользователей</p>
-      </section>
-      <!--Фотографии пользователей-->
-      <section class="photos">
-        <h2 class="visually-hidden">Фотографии</h2>
-        <header class="photos__header">
-          <p class="photos__intro">
-            Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?
-          </p>
-        </header>
-        <div class="photos__list">
-          <article class="photos__item photos__item--best">
-            <a  class="photos__image photos-image--best" href="#">
-              <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Анна</b>
-              <p class="photos__time">(5 минут назад)</p>
-              <p class="photos__text">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <a class="photos__likes" href="#">Нравится: 215</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Левон</b>
-              <p class="photos__time">(5 часов назад)</p>
-              <p class="photos__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <a class="photos__likes" href="#">Нравится: 356</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Антон</b>
-              <p class="photos__time">(2 часов назад)</p>
-              <p class="photos__text">
-               Соседи будут рады!
-              </p>
-              <a class="photos__likes" href="#">Нравится: 666</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a  class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Борис</b>
-              <p class="photos__time">(20 часов назад)</p>
-              <p class="photos__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <a class="photos__likes" href="#">Нравится: 215</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a  class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Сергей</b>
-              <p class="photos__time">(25 часов назад)</p>
-              <p class="photos__text">
-                Самая кубанская в мире!
-              </p>
-              <a class="photos__likes" href="#">Нравится: 4</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info">
-              <b class="photos__author-name">Максим</b>
-              <p class="photos__time">(40 часов назад)</p>
-              <p class="photos__text">
-                А где снег-то?
-              </p>
-              <a class="photos__likes" href="#">Нравится: 150</a>
-            </div>
-          </article>
-          <article class="photos__item">
-            <a  class="photos__image" href="#">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="photos__author-info photos__author-info--last">
-              <b class="photos__author-name">Надежда</b>
-              <p class="photos__time">(45 часов назад)</p>
-              <p class="photos__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <a class="photos__likes" href="#">Нравится: 2560</a>
-            </div>
-          </article>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-      </section>
-      <section class="filter">
-        <h2 class="visually-hidden">Обработка фотографии</h2>
-        <header class="filter__header">
-          <p class="filter__intro filter-intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        </header>
-        <div class="filter__wrapper">
-          <a class="filter__image" href="#">
-            <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фотография для обработки">
-          </a>
-          <div class="filter__filters filters">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <a class="filters__link filters__link--size" href="#">Размер</a>
-              </li>
-              <li class="filters__item">
-                <a class="filters__link filters__link--color" href="#">Цвет</a>
-              </li>
-              <li class="filters__item">
-                <a class="filters__link filters__link--contrast" href="#">Контраст</a>
-              </li>
-            </ul>
-          </div>
-          <div class="filter__range-filter range-filter">
-            <div class="filter__range-controls range-controls">
-              <input type="range">
-            </div>
-          </div>
-          <button class="button filter__button filter__button--submit" type="submit">Запостить</button>
-          <button class="button filter__button filter__button--cancel" type="reset">Отменить</button>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Приложение «Пинк»">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">YouTube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

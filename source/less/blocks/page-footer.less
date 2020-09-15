@@ -1,5 +1,8 @@
 .page-footer {
-  background-color: @white;
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
 }
-
-

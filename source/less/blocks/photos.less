@@ -2,6 +2,7 @@
   display: inline-block;
   text-align: center;
   color: @copyblue;
+  width: 280px
 }
 
 .photos__item img {
@@ -11,6 +12,11 @@
 .photos__author-info {
   background-color: @lightgrey;
   margin-bottom: 20px;
+  width: 280px;
+}
+
+.photos__author-info--best {
+  width: 100%
 }
 
 .photos__author-name {
@@ -28,6 +34,7 @@
 
 .photos__text {
   .text-photos;
+  min-height: 144px;
 }
 
 .photos__likes {
@@ -40,3 +47,29 @@
 .photos__author-info--last {
   margin-bottom: 0;
 }
+
+.photos {
+  background-color: @white;
+}
+
+.photos__header {
+  display: flex;
+  justify-content: center;
+}
+
+.photos__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
