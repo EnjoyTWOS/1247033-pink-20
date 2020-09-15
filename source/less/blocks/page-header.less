@@ -1,12 +1,35 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: @copyblue;
   box-shadow: 0px 1px 0px @black;
   padding-left: 20px;
   padding-top: 23px;
-  margin-bottom: 0;
+  padding-bottom: 23px;
+
+@media (min-width: @tablet-width) {
+  height: 40px;
+  }
+
+@media (min-width: @desktop-width) {
+  flex-direction: row;
+  }
+}
+
+.page-header__logo {
+  width: 74px;
+  height: 23px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .page-header__logo img {
   display: block;
+  margin: 0;
 }
 
+.main-nav {
+  width: 320px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
